@@ -92,6 +92,7 @@ RUN     addgroup -S nginx \
         && make install \
         && rm -rf /etc/nginx/html/ \
         && mkdir /etc/nginx/conf.d/ \
+	&& mkdir /etc/nginx/logs/ \
         && mkdir -p /usr/share/nginx/html/ \
         && install -m644 html/index.html /usr/share/nginx/html/ \
         && install -m644 html/50x.html /usr/share/nginx/html/ \
